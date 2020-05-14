@@ -1,0 +1,169 @@
+/*
+Theme Name: shop-theme
+Author: Rico John Pollante
+*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+section, header, footer{
+    overflow: hidden;
+}
+/* main header */
+.navbar{
+    width: 100%;
+    background-color: #ffffff;
+}
+.navbar .navmenu{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+}
+.navbar .navmenu .items{
+    margin-left: 100px;
+    list-style: none;
+
+}
+.navbar .navmenu .items:hover{
+    text-decoration: underline;
+
+}
+
+
+.items a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #000000;
+}
+@media only screen and (max-width: 900px) {
+    .navbar .navmenu .items a{
+        display: none;
+    }
+    .navbar .navmenu div.hum img{
+        width: 30px; 
+        min-width: 30px;      
+    }
+    .navbar .navmenu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -15px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .navbar .navmenu .hum img.icon{
+        display: none;
+    }
+}
+
+/* Top Banner */
+
+.top-banner{
+    background-image: url(http://127.0.0.1/wordpress/wp-content/uploads/2020/05/view-of-vintage-camera-325153-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  
+
+
+
+}
+.top-banner .info{
+    text-align: center;
+
+}
+.top-banner .info p{
+    margin-top: 250px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}  
+.top-banner .info .shop-btn{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    border: solid #fff  2px;
+}
+
+/* Features and services */
+.features{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    
+
+}
+
+.features .item img{
+    width: 50px;
+    margin-top: 50px;
+}
+.features .item{
+    width: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    border-bottom: 5px solid #000000;
+
+
+}
+
+/* Products */
+.products{
+    width: 100%;
+    height: auto;
+   
+}
+.products-items{
+    margin-top: 10px;
+}
+.products-items ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.products-items ul li{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.products-items ul li a{
+    color: #000000;
+}
+.products-items img{
+    width: 280px;
+
+}
+li.product a{
+    display: block;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+    background-color: #1d1d1d;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+footer .info{
+    color: #fff;
+    width: 20%;
+    
+}
