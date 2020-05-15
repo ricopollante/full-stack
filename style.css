@@ -14,18 +14,23 @@ section, header, footer{
 /* main header */
 .navbar{
     width: 100%;
-    background-color: #ffffff;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+ 
 }
-.navbar .navmenu{
+.navbar ul.navmenu{
+    align-self: center;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 30px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-bottom: auto;
+    align-items: center;
+    width: 50%;
 }
 .navbar .navmenu .items{
-    margin-left: 100px;
+    
     list-style: none;
-
 }
 .navbar .navmenu .items:hover{
     text-decoration: underline;
@@ -35,25 +40,29 @@ section, header, footer{
 
 .items a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 900;
     color: #000000;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .navbar .navmenu .items a{
-        display: none;
+        visibility: hidden;
     }
     .navbar .navmenu div.hum img{
         width: 30px; 
-        min-width: 30px;      
+        min-width: 30px;
+           
     }
-    .navbar .navmenu {
+    .navbar ul.navmenu {
         display: flex;
         justify-content: flex-end;
-        margin-right: -15px;
+
+    }
+    .navbar {
+        opacity: .7;
     }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
     .navbar .navmenu .hum img.icon{
         display: none;
     }
@@ -114,6 +123,7 @@ section, header, footer{
     margin-right: 50px;
     margin-top: 10px;
     border-bottom: 5px solid #000000;
+    padding-bottom: 30px;
 
 
 }

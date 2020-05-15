@@ -16,7 +16,6 @@
         <div class="navbar">
             <nav>
                 <ul class="navmenu">
-                    
                     <li class="items"><a href="#home">HOME</a></li>
                     <li class="items"><a href="#home">PRODUCTS</a></li>
                     <li class="items"><a href="#home">CONTACT</a></li>

@@ -15,5 +15,16 @@ function load_js() {
       //wp_enqueue_script( 'js-file', get_template_directory_uri() . '/js/myscript.js');
   }
 
-  add_action('wp_enqueue_scripts','load_css');
-  add_action('wp_enqueue_scripts', 'load_js');
+
+
+
+function load_jquery() {
+
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
+
+}
+
+add_action('wp_enqueue_scripts', 'load_jquery');
+add_action('wp_enqueue_scripts','load_css');
+add_action('wp_enqueue_scripts', 'load_js');
