@@ -17,22 +17,20 @@ section, header, footer{
     height: 50px;
     background-color: rgb(255, 255, 255);
     position: fixed;
+    opacity: .7;
  
 }
-.navbar ul.navmenu{
-    align-self: center;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-bottom: auto;
-    align-items: center;
-    width: 50%;
+.navbar ul.navmenu li a{
+    display: block;
+    float: right;
+    margin-right: 2rem;
+    
 }
 .navbar .navmenu .items{
     
     list-style: none;
 }
-.navbar .navmenu .items:hover{
+.navbar ul.navmenu li a:hover{
     text-decoration: underline;
 
 }
@@ -44,27 +42,34 @@ section, header, footer{
     font-weight: 900;
     color: #000000;
 }
-@media only screen and (max-width: 600px) {
-    .navbar .navmenu .items a{
+@media only screen and (max-width: 800px) {
+    .navbar ul.navmenu li a{
         visibility: hidden;
     }
     .navbar .navmenu div.hum img{
         width: 30px; 
         min-width: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
            
     }
-    .navbar ul.navmenu {
-        display: flex;
-        justify-content: flex-end;
-
-    }
     .navbar {
-        opacity: .7;
+        
+        text-align: right;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
     .navbar .navmenu .hum img.icon{
         display: none;
+    }
+    .navbar ul.navmenu li a{
+        visibility : visible !important;
+        display: block !important;
+        float: right !important;
+        
+    }
+    .navbar{
+        height: 50px !important;
     }
 }
 
@@ -118,12 +123,12 @@ section, header, footer{
     margin-top: 50px;
 }
 .features .item{
-    width: 400px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
     border-bottom: 5px solid #000000;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
 
 }
@@ -143,17 +148,18 @@ section, header, footer{
     justify-content: center;
     flex-wrap: wrap;
     
+    
 }
 .products-items ul li{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .products-items ul li a{
     color: #000000;
 }
 .products-items img{
-    width: 280px;
+    width: 350px;
 
 }
 li.product a{

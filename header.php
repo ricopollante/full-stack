@@ -16,13 +16,14 @@
         <div class="navbar">
             <nav>
                 <ul class="navmenu">
+                <div class="hum">
+                    <img src="http://127.0.0.1/wordpress/wp-content/uploads/2020/05/custom-–-1.png" alt="" class="icon">
+                    </div>
                     <li class="items"><a href="#home">HOME</a></li>
                     <li class="items"><a href="#home">PRODUCTS</a></li>
                     <li class="items"><a href="#home">CONTACT</a></li>
                     <li class="items"><a href="#home">ABOUT US</a></li>
-                    <div class="hum">
-                    <img src="http://127.0.0.1/wordpress/wp-content/uploads/2020/05/custom-–-1.png" alt="" class="icon">
-                    </div>
+                    
                 </ul>
             </nav>
         </div>
