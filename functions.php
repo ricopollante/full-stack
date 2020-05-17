@@ -25,6 +25,11 @@ function load_jquery() {
 
 }
 
+function register_my_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+  }
+
+add_action( 'init', 'register_my_menu' );
 add_action('wp_enqueue_scripts', 'load_jquery');
 add_action('wp_enqueue_scripts','load_css');
 add_action('wp_enqueue_scripts', 'load_js');

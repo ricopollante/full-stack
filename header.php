@@ -22,7 +22,7 @@
                     <li class="items"><a href="#home">HOME</a></li>
                     <li class="items"><a href="#home">PRODUCTS</a></li>
                     <li class="items"><a href="#home">CONTACT</a></li>
-                    <li class="items"><a href="#home">ABOUT US</a></li>
+                    <li class="items"><a href="http://127.0.0.1/wordpress/about-us/">ABOUT US</a></li>
                     
                 </ul>
             </nav>

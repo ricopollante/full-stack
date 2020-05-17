@@ -18,6 +18,8 @@ section, header, footer{
     background-color: rgb(255, 255, 255);
     position: fixed;
     opacity: .7;
+
+    
  
 }
 .navbar ul.navmenu li a{
@@ -82,11 +84,9 @@ section, header, footer{
     background-size: cover;
     width: 100%;
     height: 700px;
-  
-
-
-
 }
+
+
 .top-banner .info{
     text-align: center;
 
@@ -98,7 +98,7 @@ section, header, footer{
     color: #fff;
 }  
 .top-banner .info .shop-btn{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
     padding: 15px;
@@ -113,7 +113,7 @@ section, header, footer{
     flex-wrap: wrap;
     text-align: center;
     color: #000000;
-    margin-top: 10px;
+    background: rgb(245, 245, 245); 
     
 
 }
@@ -121,14 +121,15 @@ section, header, footer{
 .features .item img{
     width: 50px;
     margin-top: 50px;
+    
 }
 .features .item{
-    width: 350px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    border-bottom: 5px solid #000000;
     padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
 
 
 }
@@ -137,10 +138,10 @@ section, header, footer{
 .products{
     width: 100%;
     height: auto;
-   
+    background: rgb(245, 245, 245);  
 }
 .products-items{
-    margin-top: 10px;
+    margin-top: 50px;
 }
 .products-items ul {
     text-align: center;
@@ -149,19 +150,27 @@ section, header, footer{
     flex-wrap: wrap;
     
     
+    
+    
 }
 .products-items ul li{
     margin-left: auto;
     margin-right: auto;
+    
     
 }
 .products-items ul li a{
     color: #000000;
 }
 .products-items img{
-    width: 350px;
+    width: 300px;
+    
 
 }
+.products-items img:hover{
+    box-shadow: 0 15px 10px #777;
+}
+
 li.product a{
     display: block;
 }
